@@ -210,8 +210,11 @@
     section.pricing-teaser {
       padding: 72px 0; text-align: center;
     }
+    /* Une seule offre depuis le 23/08/2026 : une colonne centree, et non
+       deux qui laisseraient la carte collee a gauche. */
     .plans-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+      display: grid; grid-template-columns: minmax(0, 420px); gap: 24px;
+      justify-content: center;
       max-width: 900px; margin: 0 auto; text-align: left;
     }
     @media (max-width: 720px) {
@@ -348,10 +351,10 @@
 <section class="hero">
   <div class="wrap">
     <span class="micro"><span class="dot-ok"></span> Essai gratuit 30 jours</span>
-    <h1>Fidélisez vos clients.<br/>Répondez à vos avis Google. <em>Automatiquement.</em></h1>
+    <h1>Fidélisez vos clients.<br/>Faites-les <em>revenir.</em></h1>
     <p class="lead">
       Fidelavis est la plateforme tout-en-un conçue pour les restaurateurs indépendants :
-      carte de fidélité numérique par NFC, coupons mensuels, et réponses intelligentes aux avis Google grâce à l'IA.
+      carte de fidélité numérique par NFC, coupons mensuels, et e-mails de relance automatiques qui ramènent vos clients.
     </p>
     <div class="cta-row">
       <a href="#tarifs" class="btn btn-primary btn-lg">Voir les offres</a>
@@ -429,8 +432,8 @@
       </div>
       <div class="feat">
         <div class="feat-icon">⭐</div>
-        <h3>Avis Google + IA</h3>
-        <p>Récupération automatique de vos avis Google My Business. L'IA rédige une réponse personnalisée que vous validez en un clic.</p>
+        <h3>Plus d'avis Google</h3>
+        <p>Vos clients fidèles sont invités à laisser un avis au bon moment, juste après une visite réussie. Sans relance manuelle, sans insistance.</p>
       </div>
       <div class="feat">
         <div class="feat-icon">🔔</div>
@@ -445,7 +448,7 @@
       <div class="feat">
         <div class="feat-icon">📊</div>
         <h3>Tableau de bord en temps réel</h3>
-        <p>Installations, coupons validés, clics "Donner un avis", réponses publiées. Toutes vos métriques clés en un coup d'œil.</p>
+        <p>Nouveaux clients, cartes installées, coupons validés, clics « Donner un avis ». Toutes vos métriques clés en un coup d'œil.</p>
       </div>
     </div>
   </div>
