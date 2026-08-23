@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>Fidelavis — Fidélisation client & avis Google automatiques pour restaurants</title>
-  <meta name="description" content="Fidelavis est la plateforme tout-en-un pour restaurateurs : carte de fidélité NFC, coupons mensuels, gestion des avis Google avec réponses IA. Essai gratuit 14 jours." />
+  <meta name="description" content="Fidelavis est la plateforme tout-en-un pour restaurateurs : carte de fidélité NFC, coupons mensuels, gestion des avis Google avec réponses IA. Essai gratuit 30 jours." />
   <meta name="theme-color" content="#1E40AF" />
 
   <link rel="icon" type="image/svg+xml" href="/img/fidelavis-icon.svg" />
@@ -13,7 +13,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Fidelavis — Fidélisation client & avis Google pour restaurants" />
-  <meta property="og:description" content="Carte de fidélité NFC + réponses IA aux avis Google. Essai gratuit 14 jours." />
+  <meta property="og:description" content="Carte de fidélité NFC + réponses IA aux avis Google. Essai gratuit 30 jours." />
   <meta property="og:image" content="https://cartefidelavis.com/img/fidelavis-logo.png" />
   <meta property="og:url" content="https://cartefidelavis.com/" />
 
@@ -347,7 +347,7 @@
 <!-- ═══════════════ HERO ═══════════════ -->
 <section class="hero">
   <div class="wrap">
-    <span class="micro"><span class="dot-ok"></span> Essai gratuit 14 jours</span>
+    <span class="micro"><span class="dot-ok"></span> Essai gratuit 30 jours</span>
     <h1>Fidélisez vos clients.<br/>Répondez à vos avis Google. <em>Automatiquement.</em></h1>
     <p class="lead">
       Fidelavis est la plateforme tout-en-un conçue pour les restaurateurs indépendants :
@@ -482,53 +482,41 @@
 <section class="pricing-teaser" id="tarifs">
   <div class="wrap">
     <div class="section-head">
-      <h2>Deux offres, zéro engagement</h2>
-      <p>14 jours d'essai · Pas de pourcentage sur votre CA · Annulable à tout moment.</p>
+      <h2>Une offre, zéro engagement</h2>
+      <p>30 jours d'essai · Pas de pourcentage sur votre CA · Annulable à tout moment.</p>
     </div>
 
     <div id="billingError"></div>
 
     <div class="plans-grid">
-
-      <!-- ── ESSENTIEL ── -->
-      <div class="price-card">
-        <span class="tag">Essentiel</span>
-        <h3>Fidelavis Essentiel</h3>
-        <p class="plan-desc">Pour démarrer avec la fidélité digitale</p>
-        <div class="price">97 €<small>/mois</small></div>
-        <div class="setup-line">+ 199 € installation · facturés après l'essai</div>
-        <ul>
-          <li>QR code fidélité personnalisé</li>
-          <li>Coupon mensuel automatique</li>
-          <li>Tableau de bord admin</li>
-          <li>Notifications push clients</li>
-          <li>1 établissement</li>
-        </ul>
-        <button class="plan-btn" data-plan="essentiel">Démarrer — Essentiel</button>
+        <!-- ── OFFRE UNIQUE ──
+             assets/plans.js ne definit qu'un plan, « terrain ». Les deux
+             offres affichees ici jusqu'au 23/08/2026 — Essentiel a 97 € et Pro
+             a 149 €, plus 199 € d'installation — n'existaient plus cote
+             application : un prospect qui cliquait « Demarrer — Pro » etait
+             facture 79 €. Les avantages listes sont exactement ceux annonces
+             dans l'application (assets/admin-trial.js). -->
+        <div class="price-card recommended">
+          <span class="tag">Offre Fidelavis</span>
+          <h3>Offre Fidelavis</h3>
+          <p class="plan-desc">Tout ce qu'il faut pour fidéliser vos clients</p>
+          <div class="price">79 €<small>/mois</small></div>
+          <div class="setup-line">Installation offerte · Sans engagement</div>
+          <ul>
+            <li>10 cartes NFC prêtes à poser sur vos tables</li>
+            <li>E-mails automatiques chaque mois pour faire revenir vos clients</li>
+            <li>Notifications push illimitées</li>
+            <li>Offres &amp; coupons fidélité</li>
+            <li>Collecte automatique des emails clients</li>
+            <li>Plus d'avis Google naturellement ⭐</li>
+            <li>Tableau de bord simple</li>
+          </ul>
+          <button class="plan-btn" data-plan="terrain">Démarrer mon essai gratuit</button>
+        </div>
       </div>
-
-      <!-- ── PRO (recommandé) ── -->
-      <div class="price-card recommended">
-        <div class="rec-badge">⭐ Recommandé</div>
-        <span class="tag">Pro</span>
-        <h3>Fidelavis Pro</h3>
-        <p class="plan-desc">Pour les restaurateurs qui veulent tout maîtriser</p>
-        <div class="price">149 €<small>/mois</small></div>
-        <div class="setup-line">+ 199 € installation · facturés après l'essai</div>
-        <ul>
-          <li>Tout le plan Essentiel</li>
-          <li>Réponses avis IA (Claude)</li>
-          <li>Google Business intégré</li>
-          <li>Statistiques avancées</li>
-          <li>Support prioritaire</li>
-        </ul>
-        <button class="plan-btn" data-plan="pro">Démarrer — Pro</button>
-      </div>
-
-    </div>
 
     <p class="pricing-foot">
-      <strong>0 € aujourd'hui</strong> · Annulez avant J+14 et ne payez rien · Paiement sécurisé Stripe
+      <strong>0 € aujourd'hui</strong> · Annulez avant J+30 et ne payez rien · Paiement sécurisé Stripe
     </p>
   </div>
 </section>

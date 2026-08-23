@@ -151,9 +151,9 @@
 
 <main class="content">
 
-  <h1 class="page-title">14 jours gratuits</h1>
+  <h1 class="page-title">30 jours gratuits</h1>
   <p class="page-sub">Aucun paiement aujourd'hui · Résiliable avant la fin d'essai</p>
-  <span class="page-note">✓ 0 € aujourd'hui · Puis 199 € installation + abonnement mensuel</span>
+  <span class="page-note">✓ 0 € aujourd'hui · Installation offerte · Puis 79 € par mois</span>
 
   <!-- Erreur Stripe -->
   <div id="billingError"></div>
@@ -161,43 +161,28 @@
   <!-- Cards -->
   <div class="plans">
 
-    <!-- ESSENTIEL -->
-    <div class="plan-card">
-      <div class="plan-name">Essentiel</div>
-      <div class="plan-desc">Pour démarrer avec la fidélité digitale</div>
-      <div class="plan-price">97 € <span>/ mois</span></div>
-      <div class="plan-setup">+ 199 € installation · facturés après l'essai</div>
-      <ul class="plan-features">
-        <li>QR code fidélité personnalisé</li>
-        <li>Coupon mensuel automatique</li>
-        <li>Tableau de bord admin</li>
-        <li>Notifications push clients</li>
-        <li>1 établissement</li>
-      </ul>
-      <button class="plan-btn" data-plan="essentiel">
-        Démarrer — Essentiel
-      </button>
-    </div>
-
-    <!-- PRO -->
+    <!-- OFFRE UNIQUE — assets/plans.js ne definit qu'un plan, « terrain ».
+         Les deux offres affichees ici jusqu'au 23/08/2026 n'existaient plus
+         cote application : un prospect qui choisissait Pro etait facture le
+         prix unique. Avantages repris de assets/admin-trial.js. -->
     <div class="plan-card recommended">
-      <div class="plan-badge-rec">⭐ Recommandé</div>
-      <div class="plan-name">Pro</div>
-      <div class="plan-desc">Pour les restaurateurs qui veulent tout maîtriser</div>
-      <div class="plan-price">149 € <span>/ mois</span></div>
-      <div class="plan-setup">+ 199 € installation · facturés après l'essai</div>
+      <div class="plan-name">Offre Fidelavis</div>
+      <div class="plan-desc">Tout ce qu'il faut pour fidéliser vos clients</div>
+      <div class="plan-price">79 € <span>/ mois</span></div>
+      <div class="plan-setup">Installation offerte · Sans engagement</div>
       <ul class="plan-features">
-        <li>Tout le plan Essentiel</li>
-        <li>Réponses avis IA (Claude)</li>
-        <li>Google Business intégré</li>
-        <li>Statistiques avancées</li>
-        <li>Support prioritaire</li>
+        <li>10 cartes NFC prêtes à poser sur vos tables</li>
+        <li>E-mails automatiques chaque mois pour faire revenir vos clients</li>
+        <li>Notifications push illimitées</li>
+        <li>Offres &amp; coupons fidélité</li>
+        <li>Collecte automatique des emails clients</li>
+        <li>Plus d'avis Google naturellement ⭐</li>
+        <li>Tableau de bord simple</li>
       </ul>
-      <button class="plan-btn" data-plan="pro">
-        Démarrer — Pro
+      <button class="plan-btn" data-plan="terrain">
+        Démarrer mon essai gratuit
       </button>
     </div>
-
   </div>
 
   <p class="guarantee">
